@@ -501,18 +501,4 @@ function Chunk:_ClearParts()
 	table.clear(self.Parts)
 end
 
-
-
-function Chunk:_ResetVoxelStateToInactive()
-	for index, voxel in ipairs(self.Voxels) do
-		self.Voxels[index] = Voxel.GetUpdatedID(voxel, false)
-	end
-end
-
-function Chunk:_ResetVoxelStateToActive()
-	for index, voxel in ipairs(self.Voxels) do
-		self.Voxels[index] = Voxel.GetUpdatedID(voxel, true)
-	end
-end
-
 return Chunk

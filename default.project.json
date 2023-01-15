@@ -1,4 +1,5 @@
 {
+  "servePort": 8080,
   "name": "project",
   "tree": {
     "$className": "DataModel",

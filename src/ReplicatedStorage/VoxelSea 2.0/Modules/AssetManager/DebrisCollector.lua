@@ -43,7 +43,7 @@ function DebrisCollector.RemoveItem(instance : Instance)
 end
 
 function DebrisCollector.GetWaitingQueueSize()
-    return #DebrisCollector.WaitingQueue
+    return #(DebrisCollector.WaitingQueue)
 end
 
 return DebrisCollector
